@@ -1,7 +1,7 @@
 package Pizza;
 
 public abstract class Pizza {
-    String name;
+    protected String name;
 
     public abstract double getPrice();
 
