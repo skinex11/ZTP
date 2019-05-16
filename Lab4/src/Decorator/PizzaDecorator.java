@@ -6,6 +6,7 @@ public class PizzaDecorator extends Pizza {
     protected Pizza pizza;
 
     public PizzaDecorator(Pizza pizza){
+        super(pizza.name);
         this.pizza = pizza;
     }
 

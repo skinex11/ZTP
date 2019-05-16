@@ -2,7 +2,7 @@ package Pizza;
 
 public class Wloska extends Pizza {
     public Wloska(String name) {
-        this.name = name;
+        super(name);
     }
 
     @Override
