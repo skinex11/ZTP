@@ -1,7 +1,10 @@
 package Pizza;
 
+import State.State;
+
 public abstract class Pizza {
-    protected String name;
+    public String name;
+    private State state;
 
     public abstract double getPrice();
 
@@ -11,5 +14,9 @@ public abstract class Pizza {
                 name+
                 ", Cena: "+
                 getPrice();
+    }
+
+    public void setState(State state) {
+        this.state = state;
     }
 }

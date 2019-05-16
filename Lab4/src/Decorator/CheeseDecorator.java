@@ -5,6 +5,7 @@ import Pizza.Pizza;
 public class CheeseDecorator extends PizzaDecorator {
     public CheeseDecorator(Pizza pizza) {
         super(pizza);
+        name = pizza.name;
     }
 
     public double getPrice(){
@@ -13,8 +14,8 @@ public class CheeseDecorator extends PizzaDecorator {
 
     @Override
     public String toString() {
-        return "Pizza"+
-                super.name+
+        return "Pizza "+
+                name+
                 " z dodatkowym serem,"+
                 " Cena: "+
                 getPrice();
